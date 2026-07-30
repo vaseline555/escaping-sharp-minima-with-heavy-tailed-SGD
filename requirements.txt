@@ -1,0 +1,13 @@
+# Core deps for train_gpt2.py (GPT-2 / FineWeb / Theta).
+# Install PyTorch matching your CUDA runtime FIRST, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# then:  pip install -r requirements.txt
+
+torch>=2.3.0          # scaled_dot_product_attention, torch.amp.autocast, bf16
+numpy>=1.24           # tokens.numpy() readinto for FineWeb .bin shards
+pyyaml>=6.0           # --config YAML parsing
+huggingface-hub>=0.23 # download_data.sh dataset pull
+wandb>=0.17           # experiment logging (--wandb)
+
+# Theta package: vendored in ./Theta, installed editable via
+#   pip install -e ./Theta

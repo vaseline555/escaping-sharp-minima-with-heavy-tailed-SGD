@@ -1,0 +1,27 @@
+# Data & logs (created at runtime, never committed)
+data/
+logs/
+
+# Python envs / build artifacts
+venvs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Training outputs
+*.bin
+*.pt
+*.ckpt
+*.out
+*.log
+
+# wandb
+wandb/
+
+# core dumps & editor cruft
+core.*
+.DS_Store
